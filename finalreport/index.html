@@ -26,6 +26,26 @@
 
 <p>Narrative about business intelligence question using Google analytics here.</p>
 
+<p>The last requirement we got from our stakeholders was to do some analysis of how small changes in our website could change user behavior. We decided to answer these strategic questions using A/B testing and Google Analytics. This proved to be a technical challenge for us! One of the biggest issues we encountered was that it was difficult to tell when we had properly implemented the testing code. Our method required bypassing a few of Google Analytics' built in tools, and every test essentially required pushing all the way to production. We were disappointed to see in the end that our test for swapping the word "Donate" for "Support" did not work properly due to bugs in our code. That said, our test for whether adding "RSVP" to our events list influenced behavior worked perfectly.</p>
+
+<p>
+  The results from our test of whether adding RSVP to our events list helps is, as of yet, not fully conclusive. However, they are highly suggestive. An image of our Google Analytics results follows:
+</p>
+<img src="https://dl.dropboxusercontent.com/s/q2k5moinidilr0e/Screenshot%202015-12-11%2017.06.48.png?dl=0">
+<p>
+  As you can see in this image, there is a greater than seventy five percent chance that adding "RSVP" converts more users. The experiment's results are not yet conclusive because the number of conversions occurring in the time period during which we had the experiment running is not large enough to produce statistically sound results. Changes that we could have made to improve the soundness of our results would have been to:
+  <ul>
+    <li>Start the experiment earlier.</li>
+      <ul>
+        <li>We didn't strat the experiment until well after the simulated traffic had already begun.</li>
+      </ul>
+      <li>Increase the percentage of our users exposed to the experiment.</li>
+      <ul>
+        <li>By default, Google analytics is not entering all of our users into the experiment, in case the results of the experiment are drastically negative. Given that we were given prior knowledge that this would not be the case, we should have increased that percentage. Or rather, given that our objective is not to convert users, but rather to understand what affects users' conversion, we should have maximized the number of users subject to this over all other considerations.</li>
+      </ul>
+  </ul>
+</p>
+
 <h2>Project maintenance</h2>
 
 <p>This project was  to write an application allows users to create and RSVP for upcoming events - essentially a minimal clone of Eventbrite. Here is a description of the code.</p>
@@ -58,7 +78,7 @@
 
 <h2>What we learned about management in general and agile in particular</h2>
 
-<p>The last requirement we got from our stakeholders was to do some analysis of how small changes in our website could change user behavior. We decided to answer these strategic questions using A/B testing and Google Analytics. This proved to be a technical challenge for us! One of the biggest issues we encountered was that it was difficult to tell when we had properly implemented the testing code. Our method required bypassing a few of Google Analytics' built in tools, and every test essentially required pushing all the way to production. We were disappointed to see in the end that our test for swapping the word "Donate" for "Support" did not work properly due to bugs in our code. That said, our test for whether adding "RSVP" to our events list influenced behavior worked perfectly.</p>
+
 
 
 
